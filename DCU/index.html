@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Diagrama de Caso de Uso - Feedback de Curso - Documentação - Sistema de Feedback de Curso</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Documentação - Sistema de Feedback de Curso</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Página de Documentação</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Diagrama de Caso de Uso - Feedback de Curso</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../DDC/" class="nav-link">Diagrama de Classes - Feedback de Curso</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../DDO/" class="nav-link">Diagrama de Objeto - Feedback de Curso</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../DDP/" class="nav-link">Diagrama de Pacote - Feedback de Curso</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../DDS/" class="nav-link">DDS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../Requisitos/" class="nav-link">Requisitos - Feedcak de Curso</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../report/" class="nav-link">Relatório Final de Avaliação de Feedbacks</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../DDC/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#diagrama-de-caso-de-uso-feedback-de-curso" class="nav-link">Diagrama de Caso de Uso - Feedback de Curso</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#exemplo-de-cenarios-de-casos-de-uso" class="nav-link">Exemplo de Cenários de Casos de Uso</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="diagrama-de-caso-de-uso-feedback-de-curso">Diagrama de Caso de Uso - Feedback de Curso</h1>
+<p>Casos de Uso (Detalhamento)</p>
+<p>1.Cadastro/Login (Aluno)</p>
+<p>Descrição: Permitir que alunos se cadastrem e façam login para acessar a plataforma.</p>
+<p>Atores Envolvidos:Aluno.</p>
+<p>Fluxo Principal:<br />
+O aluno acessa a página de login/cadastro.
+Insere suas credenciais (e-mail, senha).
+O sistema verifica a autenticidade das informações.<br />
+Acesso autorizado.</p>
+<p>Fluxo Alternativo: Em caso de erro, o sistema retorna mensagens específicas (e.g., "Senha incorreta").</p>
+<p>2.Enviar Feedback (Aluno)
+Descrição: Registrar a opinião sobre um curso.</p>
+<p>Atores Envolvidos: Aluno, API de IA.</p>
+<p>Fluxo Principal:
+O aluno acessa a página do curso.
+Preenche o formulário de feedback.
+O feedback é enviado para o backend, armazenado no banco de dados e enviado à API de análise de sentimentos.</p>
+<p>Fluxo Alternativo: Caso a conexão com a API falhe, o sistema armazena o feedback para envio posterior.</p>
+<p>3.Visualizar Relatório de Sentimentos (Administrador)
+Descrição: Permitir que administradores acessem relatórios de feedback com análise de sentimentos.</p>
+<p>Atores Envolvidos: Administrador.</p>
+<p>Fluxo Principal:
+O administrador faz login no sistema.
+Acessa o painel de relatórios.
+Visualiza gráficos e análises geradas pela API de sentimentos.</p>
+<p>4.Análise de Sentimentos (API de IA)
+Descrição: Realizar análise automática dos textos de feedback para gerar insights.</p>
+<p>Atores Envolvidos: API de IA, Feedbacks (dados).</p>
+<p>Fluxo Principal:
+O feedback enviado pelo aluno é processado pela API.
+A API retorna informações de polaridade (positivo, negativo, neutro) e palavras-chave associadas.</p>
+<table>
+<thead>
+<tr>
+<th>Etapa</th>
+<th>Ator</th>
+<th>Descrição</th>
+<th>Fluxo Principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cadastro</td>
+<td>Aluno</td>
+<td>Permite que o aluno crie uma conta e faça login na plataforma</td>
+<td>1.Aluno acessa a tela de login 2.Insere dados de acesso. 3.Validação e login são confirmados.</td>
+</tr>
+<tr>
+<td>Enviar Feedback</td>
+<td>Aluno</td>
+<td>O aluno envia uma avaliação para o curso específico</td>
+<td>1.Aluno seleciona o curso. 2.Insere feedback. 3.Envia o feedback que é registrado no sistema.</td>
+</tr>
+<tr>
+<td>Visualizar Relatório de Sentimentos</td>
+<td>Administrador</td>
+<td>O administrador acessa o relatório de feedbacks com análise de sentimentos.</td>
+<td>1.Administrador acessa a interface de relatórios. 2.Visualiza gráficos e insights dos feedbacks.</td>
+</tr>
+<tr>
+<td>Análise de Sentimento</td>
+<td>API de IA</td>
+<td>Realiza a análise de sentimento do feedback recebido.</td>
+<td>1.Feedback é enviado para a API. 2.API processa o sentimento. 3.Resultados são exibidos para o admin.</td>
+</tr>
+</tbody>
+</table>
+<p>Imagem Do Diagrama de Caso de Uso:
+<img alt="Diagrama Caso de Uso" src="../CasoDeUso.png" /></p>
+<h2 id="exemplo-de-cenarios-de-casos-de-uso">Exemplo de Cenários de Casos de Uso</h2>
+<p>1.Enviar Feedback (Aluno)<br />
+Cenário:
+Aluno enviando feedback após concluir um curso</p>
+<p>Contexto:
+Ana finalizou um curso de "Introdução à Ciência de Dados" e deseja avaliar sua experiência.</p>
+<p>Ação:
+Ana faz login no sistema e acessa a página do curso finalizado.
+Ela clica no botão "Enviar Feedback".
+Preenche o formulário com comentários positivos sobre a didática do curso e sugestões de melhorias.
+O sistema armazena o feedback no banco de dados e envia automaticamente o conteúdo para a API de análise de sentimentos.</p>
+<p>Exceção:
+Caso a conexão com a API falhe, o sistema exibe a mensagem: "Estamos enfrentando problemas técnicos. Seu feedback foi armazenado e será enviado posteriormente."</p>
+<p>2.Visualizar Relatório de Sentimentos (Administrador)</p>
+<p>Cenário:
+Administrador monitorando feedbacks para avaliar a qualidade dos cursos.</p>
+<p>Contexto:
+Carlos, administrador da plataforma, quer avaliar a satisfação dos alunos com o curso "Python para Iniciantes".</p>
+<p>Ação:
+Carlos faz login com suas credenciais de administrador.
+Ele acessa o painel de relatórios da plataforma.
+Seleciona o relatório de "Python para Iniciantes". Visualiza gráficos interativos que mostram a polaridade dos feedbacks (75% positivos, 25% negativos) e as principais palavras-chave mencionadas.
+Com base nos insights, ele identifica que os alunos destacam a clareza das aulas, mas mencionam dificuldades com exercícios práticos.</p>
+<p>3.Análise de Sentimentos (API de IA)</p>
+<p>Cenário:
+API processando feedback e retornando resultados</p>
+<p>Contexto:
+O sistema recebeu o feedback de Ana, com o seguinte comentário: "O curso foi ótimo! A didática do professor é excelente, os exercícios são desafiadores."</p>
+<p>Ação:
+O sistema envia o texto para a API de análise de sentimentos.
+A API processa o texto e identifica uma polaridade positiva.
+Também extrai as seguintes palavras-chave: "didática excelente", "exercícios desafiadores".
+O sistema armazena os resultados e os disponibiliza no painel de relatórios para o administrador.</p>
+<p>Exceção:
+Se a API não conseguir processar o texto devido a problemas de formatação, o sistema registra o erro e exibe a mensagem: "Falha na análise de sentimentos. Tente novamente mais tarde."</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
