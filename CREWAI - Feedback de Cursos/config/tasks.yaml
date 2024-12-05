@@ -1,0 +1,27 @@
+classification_task:
+  description: >
+    Classificar uma lista de textos contendo feedbacks de usuários de um curso educacional {feedbacks}. Separe as palavras-chaves que definiram o sentimento interpretado dos feedbacks.
+  expected_output: >
+    Devolva como resultado uma lista contendo o sentimento de cada feedback e uma justificativa final para sua decisão. Devolva outra lista contendo as palavras-chaves que definiram o sentimento dos feedbacks.
+  agent: analista
+
+reporting_task:
+  description: >
+    Crie um relatorio final contendo todas as avaliações de feedbacks classificadas em positivos ou negativos.
+  expected_output: >
+    Um relatório completo contendo todos os feedbacks classificados.
+  agent: reporting_analyst
+
+grafico_task:
+  description: >
+    Criar um arquivo com códigos em python que mostre os gráficos criados a partir dos feedbacks recebidos. 
+  expected_output: >
+    o código completo contendo os gráficos de pizza que mostre a porcentagem entre positivos e negativos, gráfico de barras mostrando o número de positivos e negativos, nuvem de palavras para feedbacks bons e nuvem de palavras para feedbacks ruins.Para a nuvem de palavras, use stopwords em português e utilize apenas as palavras-chaves definidas pelo analista. formatado como arquivo .py utilizando matplotlib. Salve na pasta.
+  agent: analista_graficos
+
+grafico_dev:
+  description: >
+    Analyze the given python code from grafico_task and run the code without errors.
+  expected_output: >
+    Python code without execution error. 
+  agent: desenvolvedor
