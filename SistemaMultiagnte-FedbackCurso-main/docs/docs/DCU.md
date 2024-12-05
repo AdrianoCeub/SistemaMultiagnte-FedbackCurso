@@ -3,14 +3,15 @@
 Casos de Uso (Detalhamento)
 
 1.Cadastro/Login (Aluno)
+
 Descrição: Permitir que alunos se cadastrem e façam login para acessar a plataforma.
 
-Atores Envolvidos: Aluno.
+Atores Envolvidos:Aluno.
 
-Fluxo Principal:
+Fluxo Principal:  
 O aluno acessa a página de login/cadastro.
 Insere suas credenciais (e-mail, senha).
-O sistema verifica a autenticidade das informações.
+O sistema verifica a autenticidade das informações.  
 Acesso autorizado.
 
 Fluxo Alternativo: Em caso de erro, o sistema retorna mensagens específicas (e.g., "Senha incorreta").
@@ -55,6 +56,57 @@ A API retorna informações de polaridade (positivo, negativo, neutro) e palavra
 
 Imagem Do Diagrama de Caso de Uso:
 ![Diagrama Caso de Uso](CasoDeUso.png)
+
+## Exemplo de Cenários de Casos de Uso
+
+1.Enviar Feedback (Aluno)  
+Cenário:
+Aluno enviando feedback após concluir um curso
+
+Contexto:
+Ana finalizou um curso de "Introdução à Ciência de Dados" e deseja avaliar sua experiência.
+
+Ação:
+Ana faz login no sistema e acessa a página do curso finalizado.
+Ela clica no botão "Enviar Feedback".
+Preenche o formulário com comentários positivos sobre a didática do curso e sugestões de melhorias.
+O sistema armazena o feedback no banco de dados e envia automaticamente o conteúdo para a API de análise de sentimentos.
+
+Exceção:
+Caso a conexão com a API falhe, o sistema exibe a mensagem: "Estamos enfrentando problemas técnicos. Seu feedback foi armazenado e será enviado posteriormente."
+
+2.Visualizar Relatório de Sentimentos (Administrador)
+
+Cenário:
+Administrador monitorando feedbacks para avaliar a qualidade dos cursos.
+
+Contexto:
+Carlos, administrador da plataforma, quer avaliar a satisfação dos alunos com o curso "Python para Iniciantes".
+
+Ação:
+Carlos faz login com suas credenciais de administrador.
+Ele acessa o painel de relatórios da plataforma.
+Seleciona o relatório de "Python para Iniciantes". Visualiza gráficos interativos que mostram a polaridade dos feedbacks (75% positivos, 25% negativos) e as principais palavras-chave mencionadas.
+Com base nos insights, ele identifica que os alunos destacam a clareza das aulas, mas mencionam dificuldades com exercícios práticos.
+
+3.Análise de Sentimentos (API de IA)
+
+Cenário:
+API processando feedback e retornando resultados
+
+Contexto:
+O sistema recebeu o feedback de Ana, com o seguinte comentário: "O curso foi ótimo! A didática do professor é excelente, os exercícios são desafiadores."
+
+Ação:
+O sistema envia o texto para a API de análise de sentimentos.
+A API processa o texto e identifica uma polaridade positiva.
+Também extrai as seguintes palavras-chave: "didática excelente", "exercícios desafiadores".
+O sistema armazena os resultados e os disponibiliza no painel de relatórios para o administrador.
+
+Exceção:
+Se a API não conseguir processar o texto devido a problemas de formatação, o sistema registra o erro e exibe a mensagem: "Falha na análise de sentimentos. Tente novamente mais tarde."
+
+
 
 
 

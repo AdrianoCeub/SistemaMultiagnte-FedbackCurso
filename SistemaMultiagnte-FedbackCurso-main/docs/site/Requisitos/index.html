@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Requisitos - Feedcak de Curso - Documentação - Sistema de Feedback de Curso</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Documentação - Sistema de Feedback de Curso</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Página de Documentação</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../DCU/" class="nav-link">Diagrama de Caso de Uso - Feedback de Curso</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../DDC/" class="nav-link">Diagrama de Classes - Feedback de Curso</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../DDO/" class="nav-link">Diagrama de Objeto - Feedback de Curso</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../DDP/" class="nav-link">Diagrama de Pacote - Feedback de Curso</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../DDS/" class="nav-link">DDS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Requisitos - Feedcak de Curso</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../DDS/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#requisitos-feedcak-de-curso" class="nav-link">Requisitos - Feedcak de Curso</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="requisitos-feedcak-de-curso">Requisitos - Feedcak de Curso</h1>
+<p>Requisitos Funcionais (RF)
+Módulo de Interface do Usuário (Web)</p>
+<p>RF01 – O sistema deve permitir que o aluno envie feedbacks sobre cursos finalizados.<br />
+RF02 – O sistema deve apresentar uma interface para o administrador visualizar relatórios de feedback.</p>
+<p>Módulo de Autenticação</p>
+<p>RF03 – O sistema deve permitir que o administrador cadastre novos usuários administradores.</p>
+<p>Módulo de Feedback (CRUD)</p>
+<p>RF04 – O sistema deve permitir que o aluno crie um novo feedback.<br />
+RF05 – O sistema deve armazenar os feedbacks com informações como data, curso e aluno.<br />
+RF06 – O sistema deve validar que o aluno só pode enviar feedback para cursos em que esteja inscrito.</p>
+<p>Módulo de Análise de Sentimentos (API de IA)</p>
+<p>RF07 – O sistema deve integrar uma API de análise de sentimentos para processar automaticamente os feedbacks.<br />
+RF08 – O sistema deve enviar feedbacks em texto para a API e receber uma classificação de sentimento (positivo, neutro, negativo).<br />
+RF09 – O sistema deve gerar relatórios de análise de sentimento para os administradores visualizarem.<br />
+RF10 – O sistema deve identificar padrões de sentimentos e gerar gráficos com base nos feedbacks recebidos.</p>
+<p>Requisitos Não Funcionais (RNF)</p>
+<p>RNF01 – O sistema deve ser acessível via navegadores web modernos (Google Chrome, Firefox, Safari).<br />
+RNF02 – O sistema deve seguir as boas práticas de responsividade, permitindo o acesso em dispositivos móveis e desktops.<br />
+RNF03 – O sistema deve garantir que os dados dos usuários sejam armazenados de forma segura, com criptografia de senhas.<br />
+RNF04 – O sistema deve garantir a disponibilidade mínima de 99% durante o horário de funcionamento da instituição.<br />
+RNF05 – O sistema deve processar a análise de sentimentos em até 5 segundos após o envio do feedback.<br />
+RNF06 – O sistema deve ser escalável para suportar até 10.000 usuários simultâneos.<br />
+RNF07 – O sistema deve utilizar padrões de segurança como autenticação JWT para sessões de login.<br />
+RNF08 – O sistema deve permitir exportação de relatórios em formato PDF ou CSV.<br />
+RNF09 – O sistema deve garantir que a API de análise de sentimentos seja acessada por uma conexão segura (HTTPS).</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
